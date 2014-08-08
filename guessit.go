@@ -24,7 +24,7 @@ type GuessResult struct {
 	Title         string `json:"title"`
 	Type          string `json:"type"`
 	VideoCodec    string `json:"videoCodec"`
-	Year          string `json:"year"`
+	Year          int    `json:"year"`
 }
 
 func Guess(filename string) (*GuessResult, error) {
